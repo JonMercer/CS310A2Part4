@@ -2,3 +2,52 @@ This is to test some push
 
 
 This line was edited on the web
+
+
+The following lines are edited on my mac. I’ve pasted what I did in terminal
+
+-=-=-=-=-=-
+
+
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git add test.txt 
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git commit -m "first commit with some test
+> "
+[master 5a67c76] first commit with some test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/JonMercer/CS310A2Part4.git
+   fca709f..5a67c76  master -> master
+Odins-MacBook-Pro:CS310A2Part4 Odin$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://github.com/JonMercer/CS310A2Part4
+   5a67c76..5647e3c  master     -> origin/master
+Updating 5a67c76..5647e3c
+Fast-forward
+ test.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+Odins-MacBook-Pro:CS310A2Part4 Odin$ 
